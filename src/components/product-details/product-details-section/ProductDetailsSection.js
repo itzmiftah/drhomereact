@@ -56,8 +56,8 @@ const ProductDetailsSection = ({
   isWishlisted,
 }) => {
   const { t } = useTranslation();
-  const productImage = productDetailsData?.image_full_url;
-  const productThumbImage = productDetailsData?.images_full_url;
+  const productImage = configData?.base_urls?.item_image_url+'/'+productDetailsData?.image;
+  const productThumbImage = productDetailsData?.images;
   const imageBaseUrl = productDetailsData?.isCampaignItem
     ? "campaign_image_url"
     : "item_image_url";

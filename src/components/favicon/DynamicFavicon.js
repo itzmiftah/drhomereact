@@ -12,20 +12,20 @@ const DynamicFavicon = ({ configData }) => {
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href={configData?.fav_icon_full_url}
+        href={'https://drhome.drhomeonline.net/storage/app/public/business/2024-07-30-66a89ec685b88.png'}
       />
-      <link rel="icon" href={configData?.fav_icon_full_url} />
+      <link rel="icon" href={'https://drhome.drhomeonline.net/storage/app/public/business/2024-07-30-66a89ec685b88.png'} />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href={configData?.fav_icon_full_url}
+        href={'https://drhome.drhomeonline.net/storage/app/public/business/2024-07-30-66a89ec685b88.png'}
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href={configData?.fav_icon_full_url}
+        href={'https://drhome.drhomeonline.net/storage/app/public/business/2024-07-30-66a89ec685b88.png'}
       />
     </Head>
   );

@@ -51,7 +51,7 @@ const ProductImageView = ({
   }, [productImage]);
 
   const handleClick = (item, index) => {
-    setPreViewImage(item);
+    setPreViewImage(configData?.base_urls?.item_image_url+'/'+item);
     setImageIndex(index);
   };
   const borderColor = theme.palette.primary.main;
@@ -157,7 +157,7 @@ const ProductImageView = ({
                   image_index={imageIndex}
                 >
                   <CustomImageContainer
-                    src={item}
+                    src={configData?.base_urls?.item_image_url+'/'+item}
                     width="100%"
                     height="100%"
                     objectfit="cover"
