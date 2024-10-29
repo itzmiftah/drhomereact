@@ -28,6 +28,7 @@ const Banners = ({ landingPageData, isSmall }) => {
     }
   };
 
+
   const slidesToShowManage = () => {
     if (isSmall) {
       return 1;

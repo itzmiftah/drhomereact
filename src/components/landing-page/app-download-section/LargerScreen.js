@@ -16,6 +16,7 @@ const LargerScreen = (props) => {
   const isUpSmall = useMediaQuery(
     "(min-width: 1000px) and (max-width: 1550px)"
   );
+  // console.log(landingPageData);
   return (
     <>
       <Stack
@@ -115,7 +116,7 @@ const LargerScreen = (props) => {
         }}
       >
         <CustomImageContainer
-          src={landingPageData?.business_image_full_url}
+          src={'https://drhome.drhomeonline.net/storage/app/public/business_image/'+landingPageData?.business_image}
           objectfit="cover"
           // height="100%"
           // width="100%"

@@ -26,7 +26,7 @@ import { getHomePageBannerImageUrl } from "utils/CustomFunctions";
 
 const BestReviewedItems = (props) => {
   const { title, info, bannerIsLoading } = props;
-  const url = info?.best_reviewed_section_banner_full_url;
+  const url = 'https://drhome.drhomeonline.net/storage/app/public/business_image/2023-06-12-6486f8edb1350.png';
   // console.log(info);
   // console.log(url);
   const [menu, setMenu] = useState([]);

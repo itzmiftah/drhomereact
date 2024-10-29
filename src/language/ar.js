@@ -18,7 +18,7 @@ export const arabic = {
     " هذا العرض هو",
   "However, the maximum cashback amount is":
     "ومع ذلك، فإن الحد الأقصى لمبلغ الاسترداد النقدي هو",
-  "Welcome to 6amMart!": "ي 6 صباحًا مارت",
+  "Welcome to Dr Home!": "ي 6 صباحًا مارت",
   "Get ready for a special welcome gift, enjoy a special discount on your first order within":
     "استعد للحصول على " +
     " هدية ترحيبية خاصة، واستمتع بخصم خاص على طلبك الأول في الداخل",

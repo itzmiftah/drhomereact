@@ -4,6 +4,7 @@ import CustomImageContainer from "../CustomImageContainer";
 import CustomContainer from "../container";
 
 const DiscountBanner = ({ bannerImage, isSmall }) => {
+	
 	return (
 		<>
 			{isSmall ? (
@@ -18,7 +19,7 @@ const DiscountBanner = ({ bannerImage, isSmall }) => {
 						}}
 					>
 						<CustomImageContainer
-							src={bannerImage}
+							src={'https://drhome.drhomeonline.net/storage/app/public/promotional_banner/2024-10-28-671fc45d7a77a.png'}
 							alt="banner"
 							height="100%"
 							width="100%"
@@ -37,7 +38,7 @@ const DiscountBanner = ({ bannerImage, isSmall }) => {
 					}}
 				>
 					<CustomImageContainer
-						src={bannerImage}
+						src={'https://drhome.drhomeonline.net/storage/app/public/promotional_banner/2024-10-28-671fc45d7a77a.png'}
 						alt="banner"
 						height="100%"
 						width="100%"

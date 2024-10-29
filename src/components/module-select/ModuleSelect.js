@@ -93,9 +93,10 @@ const ModuleSelect = ({
           //     configData
           //   )
           // );
+          // console.log(item);
           return (
             <Tooltip
-              title={item?.module_name}
+              title={item?.icon}
               key={index}
               placement="left-start"
             >
@@ -107,7 +108,7 @@ const ModuleSelect = ({
                 onClick={() => handleModuleSelect(item)}
               >
                 <CustomImageContainer
-                  src={item?.icon_full_url}
+                  src={configData?.base_urls?.module_image_url+'/'+item?.icon}
                   width="36px"
                   height="36px"
                   alt="mobile"

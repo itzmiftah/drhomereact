@@ -36,8 +36,8 @@ const FooterMiddle = (props) => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   let token;
-  const businessLogo = configData?.logo_full_url;
-
+  const businessLogo = 'https://drhome.drhomeonline.net/storage/app/public/business/'+configData?.logo;
+// console.log(configData);
   return (
     <CustomStackFullWidth sx={{ py: { xs: "10px", sm: "3rem" } }}>
       <Grid container spacing={{ xs: 3, md: 4 }} justifyContent="flex-start">

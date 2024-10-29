@@ -191,7 +191,7 @@ const HomePageComponents = ({ configData }) => {
           />
           <Box maxWidth={"308px"} mx={"auto"} mt={2}>
             <Typography variant="h6" color="primary" mb={2}>
-              {t("Welcome to 6amMart!")}
+              {t("Welcome to Dr Home!")}
             </Typography>
             <Typography variant="body2" lineHeight={"1.5"}>
               {profileInfo?.is_valid_for_discount

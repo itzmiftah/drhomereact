@@ -53,20 +53,20 @@ const PromotionalBanner = ({ bannerData }) => {
     header: "Up To 50% Off All Product.",
     subHeader: "We provide best quality & fresh grocery items",
   };
-
+// console.log(bannerData);
   return (
     <>
-      {bannerData?.bottom_section_banner && (
+      {/* {bannerData?.bottom_section_banner && (
         <BannerWrapper>
           <CustomImageContainer
-            src={bannerData?.bottom_section_banner_full_url}
+            src={bannerData.promotional_banner_url+'/'+bannerData?.best_reviewed_section_banner}
             height="100%"
             width="100%"
             // borderRadius={IsSmallScreen() ? "0px" : ".7rem"}
             objectFit="cover"
           />
         </BannerWrapper>
-      )}
+      )} */}
     </>
   );
 };

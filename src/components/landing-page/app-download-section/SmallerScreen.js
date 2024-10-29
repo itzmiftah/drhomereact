@@ -55,7 +55,7 @@ const SmallerScreen = (props) => {
         <Wrapper>
           <ImageWrapper>
             <CustomImageContainer
-              src={landingPageData?.business_image_full_url}
+              src={'https://drhome.drhomeonline.net/storage/app/public/business_image/'+landingPageData?.business_image}
               objectFit="cover"
               height="auto"
               width="100%"

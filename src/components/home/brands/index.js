@@ -77,7 +77,7 @@ const Brands = ({ viewAll }) => {
       }
     }
   }, [isLoading, isFetching]);
-
+  
   // Page View
   if (viewAll)
     return (

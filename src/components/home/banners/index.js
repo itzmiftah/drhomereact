@@ -194,6 +194,7 @@ const Banners = (props) => {
       },
     ],
   };
+  
   return (
     <>
       <CustomStackFullWidth
@@ -230,14 +231,15 @@ const Banners = (props) => {
             <Slider {...settings}>
               {bannersData?.length > 0 &&
                 bannersData?.map((item, index) => {
+                  // console.log(item);
                   return (
-                    <BannersWrapper
+                    <BannersWrapper   
                       key={index}
                       onClick={() => handleBannerClick(item)}
                     >
                       <CustomImageContainer
                         // src={item?.image_full_url}
-                        src={configData?.base_urls?.item_image_url+'/'+item?.image}
+                        src={configData?.base_urls?.banner_image_url+'/'+item?.image}
                         alt={item?.title}
                         height="100%"
                         width="100%"
