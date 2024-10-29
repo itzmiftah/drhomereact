@@ -27,7 +27,7 @@ const CustomImageContainer = ({
   useEffect(() => {
     setState(src ? src : placeholder.src);
   }, [src]);
-
+// console.log(src);
   return (
     <CustomImageContainerStyled
       height={height}
@@ -44,7 +44,7 @@ const CustomImageContainer = ({
       md_height={mdHeight}
       cursor={cursor}
       aspect_ratio={aspectRatio}
-      padding={padding}
+      padding={padding}  
     >
       {!imageFile ? (
         <Box

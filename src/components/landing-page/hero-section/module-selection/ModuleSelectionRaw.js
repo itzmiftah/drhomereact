@@ -56,7 +56,7 @@ const Card = ({ item, configData, isSelected, handleClick }) => {
         }}
         variant={IsSmallScreen() ? "h7" : "h6"}
       >
-        {item?.module_name}
+        {item?.module_name}  
       </Typography>
       <CustomStackFullWidth
         direction="row"
@@ -105,10 +105,10 @@ const Card = ({ item, configData, isSelected, handleClick }) => {
         )}
         <ImageWrapper>
           <CustomImageContainer
-            src={item?.icon_full_url}
+            src={'https://drhome.drhomeonline.net/storage/app/public/module/'+item?.icon}
             alt={item?.module_name}
             height="100%"
-            width="100%"
+            width="100%" 
             obejctfit="contained"
             borderRadius="5px"
           />
@@ -130,7 +130,7 @@ const ModuleSelectionRaw = (props) => {
     localStorage.setItem("module", JSON.stringify(item));
     router.replace("/home");
   };
-
+// console.log(item);
   return (
     <>
       {isSmall ? (
@@ -159,9 +159,10 @@ const ModuleSelectionRaw = (props) => {
           flexWrap="wrap"
           gap="15px"
           mt="30px"
-        >
+        >  
           {modules?.length > 0 &&
             modules.map((item, index) => {
+              // console.log(item);
               return (
                 <Card
                   key={index}

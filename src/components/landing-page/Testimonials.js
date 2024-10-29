@@ -132,6 +132,7 @@ const Testimonials = ({ isSmall, landingPageData }) => {
   if (!testimonials?.length) {
     return;
   }
+  // console.log(testimonials);
   return (
     <RTL direction={lanDirection}>
       {landingPageData && testimonials?.length > 0 && (
@@ -165,7 +166,7 @@ const Testimonials = ({ isSmall, landingPageData }) => {
                       <>
                         {item?.status === 1 && (
                           <TestimonialSlideImage
-                            img={item?.reviewer_image_full_url}
+                            img={'https://drhome.drhomeonline.net/storage/app/public/reviewer_image/'+item?.reviewer_image}
                             key={i}
                             indexState={indexState}
                             currentIndex={i}
@@ -196,6 +197,7 @@ export const TestimonialSlideImage = (props) => {
   const { img, indexState, currentIndex } = props;
   const theme = useTheme();
   const primary = theme.palette.primary.main;
+  
   return (
     <>
       <Stack

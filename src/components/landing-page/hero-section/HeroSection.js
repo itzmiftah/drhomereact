@@ -52,7 +52,7 @@ const HeroSection = ({ configData, landingPageData, handleOrderNow }) => {
       };
     }
   };
-
+// console.log(landingPageData); 
   return (
     <CustomContainer>
       <CustomBoxFullWidth
@@ -111,9 +111,9 @@ const HeroSection = ({ configData, landingPageData, handleOrderNow }) => {
                   backgroundRepeat: "no-repeat",
                   marginInline: "auto",
                   padding: "0",
-                }}
+                }} 
               >
-                {landingPageData?.header_banner_full_url && (
+                {landingPageData?.header_banner_full_url && ( 
                   <Stack margin={isXSmall ? "-5px 0 0 -3px" : "-5px 0 0 -3px"}>
                     <MobileFrame
                       width={isXSmall ? "85" : isSmall ? "215" : "246"}
@@ -131,9 +131,9 @@ const HeroSection = ({ configData, landingPageData, handleOrderNow }) => {
                   right: { xs: 7, sm: 10, md: 30 },
                   zIndex: 100,
                 }}
-              >
+              >   
                 <CustomImageContainer
-                  src={landingPageData?.header_icon_full_url}
+                  src={'https://drhome.drhomeonline.net/storage/app/public/header_icon/'+landingPageData?.header_icon}
                   alt={t("icon")}
                   height="100%"
                   width="100%"
