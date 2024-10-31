@@ -116,7 +116,7 @@ const LargerScreen = (props) => {
         }}
       >
         <CustomImageContainer
-          src={'https://drhome.drhomeonline.net/storage/app/public/business_image/'+landingPageData?.business_image}
+          src={'https://drhome.drhomeonline.net/storage/app/public/header_icon/'+landingPageData?.header_icon}
           objectfit="cover"
           // height="100%"
           // width="100%"

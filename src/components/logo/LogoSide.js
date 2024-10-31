@@ -3,8 +3,8 @@ import { Stack } from "@mui/system";
 import { getImageUrl } from "utils/CustomFunctions";
 
 const LogoSide = ({ configData, width, height, objectFit }) => {
-  const businessLogo = configData?.base_urls?.business_logo_url;
-  //console.log(configData);
+  const businessLogo = configData?.base_urls.business_logo_url+'/'+configData?.fav_icon;
+  // console.log(configData);
   //console.log(configData?.base_urls.business_logo_url+'/'+configData?.logo);
   return (
     <Stack
@@ -15,7 +15,7 @@ const LogoSide = ({ configData, width, height, objectFit }) => {
     >
       <CustomLogo
         atlText="logo"
-        logoImg={configData?.base_urls.business_logo_url+'/'+configData?.logo}
+        logoImg={businessLogo}
         //height="1.5rem"
         width={width}
         height={height}

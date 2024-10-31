@@ -36,7 +36,7 @@ const FooterMiddle = (props) => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   let token;
-  const businessLogo = 'https://drhome.drhomeonline.net/storage/app/public/business/'+configData?.logo;
+  const businessLogo = 'https://drhome.drhomeonline.net/storage/app/public/business/'+configData?.fav_icon;
 // console.log(configData);
   return (
     <CustomStackFullWidth sx={{ py: { xs: "10px", sm: "3rem" } }}>
