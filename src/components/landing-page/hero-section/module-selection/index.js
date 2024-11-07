@@ -126,6 +126,7 @@ export const ModuleSelection = ({
     setOpenModuleSelection?.(false);
     router.push("/home");
   };
+  
   const innerContent = () => {
     if (isFetched) {
       if (data?.length === 0) {
@@ -152,6 +153,7 @@ export const ModuleSelection = ({
             </CustomPaper>
           </CustomModal>
         );
+        // console.log(data);
       } else if (data?.length === 1) {
         handleSingleModule(data[0]);
       } else {
@@ -170,6 +172,7 @@ export const ModuleSelection = ({
                   {data &&
                     (data?.length > 0 ? (
                       zoneWiseModule?.(data)?.map((item, index) => {
+                        // console.log(item);
                         return (
                           <Grid item xs={4} sm={4} md={4} key={index}>
                             <CustomChildPaper
@@ -186,7 +189,7 @@ export const ModuleSelection = ({
                                 spacing={1}
                               >
                                 <CustomImageContainer
-                                  src={item?.icon_full_url}
+                                  src={configData?.base_urls?.module_image_url+'/'+item?.icon}
                                   alt="mobile"
                                   height={isXSmall ? "40px" : "100px"}
                                   width={isXSmall ? "40px" : "100px"}

@@ -105,7 +105,7 @@ const Card = ({ item, configData, isSelected, handleClick }) => {
         )}
         <ImageWrapper>
           <CustomImageContainer
-            src={'https://drhome.drhomeonline.net/storage/app/public/module/'+item?.icon}
+            src={configData?.base_urls?.module_image_url+'/'+item?.icon}
             alt={item?.module_name}
             height="100%"
             width="100%" 
