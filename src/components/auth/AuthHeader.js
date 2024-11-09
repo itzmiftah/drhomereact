@@ -18,6 +18,7 @@ const AuthHeader = ({ title, configData }) => {
       router.push("/home", undefined, { shallow: true });
     }
   };
+  // console.log(configData);
   return (
     <CustomStackFullWidth
       justifyContent="center"
@@ -29,7 +30,7 @@ const AuthHeader = ({ title, configData }) => {
           width="150px"
           height="50px"
           objectfit="cover"
-          src={configData?.logo_full_url}
+          src={'https://drhome.drhomeonline.net/storage/app/public/business/'+configData?.logo}  
         />
       </Box>
 

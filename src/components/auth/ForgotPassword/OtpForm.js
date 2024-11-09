@@ -74,7 +74,7 @@ const OtpForm = ({ data, formSubmitHandler, isLoading }) => {
               <OtpInput
                 value={otp}
                 onChange={setOtp}
-                numInputs={6}
+                numInputs={4}
                 renderInput={(props) => <input {...props} />}
               />
             </Box>
