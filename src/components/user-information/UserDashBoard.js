@@ -9,10 +9,11 @@ import ProfileStatistics from "../profile/ProfileStatistics";
 
 const UserDashBoard = ({ data, configData, isLoading }) => {
   const theme = useTheme();
+  // console.log(data);
   return (
     <Grid
       container
-      item
+      item 
       md={8}
       alignItems="center"
       spacing={{ xs: 2, sm: 3, md: 5 }}
@@ -25,7 +26,7 @@ const UserDashBoard = ({ data, configData, isLoading }) => {
           isLoading={isLoading}
           value={data?.member_since_days}
           title="Days Since Joining"
-          image={data?.image_full_url}
+          image={'https://drhome.drhomeonline.net/storage/app/public/profile/'+data?.image} 
           pathname="profile-settings"
           storage={data?.storage}
         />

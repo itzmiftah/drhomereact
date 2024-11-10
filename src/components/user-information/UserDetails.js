@@ -34,6 +34,7 @@ const UserDetails = ({
   const handleOpenPopover = () => {
     setOpenPopover(true);
   };
+  // console.log(configData);
   return (
     <>
       <Stack
@@ -53,7 +54,7 @@ const UserDetails = ({
           }}
         >
           <CustomImageContainer
-            src={data?.image_full_url}
+            src={configData?.base_urls.customer_image_url+'/'+data?.image} 
             borderRadius="50%"
             objectfit="cover"
             width="100%"
