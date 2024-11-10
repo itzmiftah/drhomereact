@@ -27,7 +27,7 @@ const ModuleWiseNav = (props) => {
 		"customer_image_url",
 		configData
 	)}/${profileInfo?.image}`;
-	const favIcon = configData?.base_urls.business_logo_url+'/'+configData?.fav_icon;
+	const favIcon = configData?.logo_full_url;
 	const lanDirection = getLanguage();
 	const dispatch = useDispatch();
 	useEffect(() => {
@@ -52,7 +52,7 @@ const ModuleWiseNav = (props) => {
 			router.push("/auth/sign-in", undefined, { shallow: true });
 		}
 	};
-//   console.log(configData);
+
 	const handleFlexendSide = () => (
 		<CustomStackFullWidth
 			direction="row"

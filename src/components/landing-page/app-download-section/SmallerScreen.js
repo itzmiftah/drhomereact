@@ -43,7 +43,9 @@ const SmallerScreen = (props) => {
       for: type,
     });
   };
+  // console.log(landingPageData?.base_urls.header_icon_url+'/'+landingPageData?.header_icon);
   return (
+   
     <Grid
       container
       justifyContent="center"
@@ -55,13 +57,13 @@ const SmallerScreen = (props) => {
         <Wrapper>
           <ImageWrapper>
             <CustomImageContainer
-              src={'https://drhome.drhomeonline.net/storage/app/public/header_icon/'+landingPageData?.header_icon}
+              src={landingPageData?.base_urls.header_icon_url+'/'+landingPageData?.header_icon} 
               objectFit="cover"
               height="auto"
               width="100%"
-            />
+            /> 
           </ImageWrapper>
-          <CustomStackFullWidth
+          <CustomStackFullWidth 
             sx={{
               position: "absolute",
               top: "50%",

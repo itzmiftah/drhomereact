@@ -5,7 +5,7 @@ import { getImageUrl } from "utils/CustomFunctions";
 const LogoSide = ({ configData, width, height, objectFit }) => {
   const businessLogo = configData?.base_urls.business_logo_url+'/'+configData?.fav_icon;
   // console.log(configData);
-  //console.log(configData?.base_urls.business_logo_url+'/'+configData?.logo);
+  // console.log(configData?.base_urls.business_logo_url+'/'+configData?.fav_icon);
   return (
     <Stack
       direction="row"
