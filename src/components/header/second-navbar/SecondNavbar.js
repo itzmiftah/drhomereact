@@ -355,7 +355,7 @@ const SecondNavBar = ({ configData }) => {
                 <Avatar
                   alt={profileInfo?.last_name}
                   sx={{ width: 34, height: 34 }}
-                  src={profileInfo?.image_full_url}
+                  src={configData?.base_urls.customer_image_url+'/'+profileInfo?.image} 
                 />
               ) : (
                 <AccountCircleIcon
@@ -400,6 +400,7 @@ const SecondNavBar = ({ configData }) => {
       )}
     </CustomStackFullWidth>
   );
+  // console.log(profileInfo);
 
   return (
     <CustomBoxFullWidth
