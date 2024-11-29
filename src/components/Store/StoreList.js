@@ -18,6 +18,7 @@ const StoreList = ({ storeType, type, setType, data }) => {
   const matchesXs = useMediaQuery("(max-width:470px)");
   const { configData } = useSelector((state) => state.configData);
   const store_image_url = `${configData?.base_urls?.store_image_url}`;
+  // console.log(data);
   return (
     <Box marginTop="20px" minHeight="60vh">
       <Grid

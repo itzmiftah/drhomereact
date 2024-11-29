@@ -216,7 +216,7 @@ const CartContent = (props) => {
       return cartItem?.totalPrice;
     }
   };
-
+// console.log(configData);
   return (
     <>
       <CustomStackFullWidth
@@ -236,7 +236,7 @@ const CartContent = (props) => {
             width="80px"
             smWidth="65px"
             smHeight="65px"
-            src={cartItem?.image_full_url}
+            src={configData?.base_urls.item_image_url+'/'+cartItem.image} 
             borderRadius=".7rem"
             objectfit="cover"
           />

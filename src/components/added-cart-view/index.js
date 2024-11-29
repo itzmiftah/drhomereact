@@ -45,7 +45,7 @@ const CardView = (props) => {
       />
     );
   };
-
+  // console.log(configData);
   return (
     <CustomSideDrawer
       anchor="right"

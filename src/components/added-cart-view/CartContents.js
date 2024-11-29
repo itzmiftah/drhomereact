@@ -18,7 +18,7 @@ const CartContents = (props) => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("md"));
   const discountContent = t("You have Saved");
-
+// console.log(imageBaseUrl);
   return (
     <CustomStackFullWidth
       justifyContent="flex-start"
